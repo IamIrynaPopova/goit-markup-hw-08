@@ -1,0 +1,44 @@
+/* Section Features*/
+
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features__list {
+  display: flex;
+}
+
+.features__icon {
+  @extend %flex;
+  justify-content: center;
+ 
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+
+  background-color: $background-sections;
+}
+
+.features__svg {
+  height: 70px;
+  width: 70px;
+}
+
+.features__title {
+  margin-bottom: 10px;
+
+  color: $secondary-color;
+
+  font-size: $main-font-size;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features__item {
+  width: calc((100% - 90px) / 4);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
