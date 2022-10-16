@@ -1,14 +1,35 @@
+
 .logo {
-  width: 145px;
+  width: 134px;
   display: block;
 
-  color: $accent-color;
+  
+  color: $accent-color; 
 
   text-decoration: none;
   font-family: Raleway, sans-serif;
-  @include font (700,26px,1.2);
+  @include font (700,24px,1.17);
   }
 
 .logo__end {
-  color: $icon-secondary-color;
-}
+  color: $icon-secondary-color;}
+
+
+
+
+
+
+// .logo {
+//   width: 145px;
+//   display: block;
+
+//   color: $accent-color;
+
+//   text-decoration: none;
+//   font-family: Raleway, sans-serif;
+//   @include font (700,26px,1.2);
+//   }
+
+// .logo__end {
+//   color: $icon-secondary-color;
+// }

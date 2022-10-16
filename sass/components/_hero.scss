@@ -1,29 +1,29 @@
-.hero {
-  max-width: 1600px;
-  margin: 0 auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+// .hero {
+//   max-width: 1600px;
+//   margin: 0 auto;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
 
-  background-color: $background-hero;
-  background-image: linear-gradient($background-image), url(../image/Img.png);
-}
+//   background-color: $background-hero;
+//   background-image: linear-gradient($background-image), url(../image/Img.png);
+// }
 
-.hero__container {
-  padding: 200px 0;
-  @extend .container;
-}
+// .hero__container {
+//   padding: 200px 0;
+//   @extend .container;
+// }
 
-.hero__title {
-  width: 700px;
-  margin-bottom: 30px;
-  margin-right: auto;
-  margin-left: auto;
+// .hero__title {
+//   width: 700px;
+//   margin-bottom: 30px;
+//   margin-right: auto;
+//   margin-left: auto;
 
-  color: $main-color;
+//   color: $main-color;
 
-  @include font(900, 44px, 1.36);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  text-align: center;
-}
+//   @include font(900, 44px, 1.36);
+//   letter-spacing: 0.06em;
+//   text-transform: uppercase;
+//   text-align: center;
+// }
