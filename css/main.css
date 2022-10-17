@@ -54,11 +54,13 @@ img {
 .header__logo {
   margin-top: 16px;
   margin-bottom: 16px;
-  margin-right: 276px;
 }
 
 .header__container {
   position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header-navigation {

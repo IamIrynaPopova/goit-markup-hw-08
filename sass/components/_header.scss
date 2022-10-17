@@ -7,12 +7,12 @@
 .header__logo {
   margin-top: 16px;
   margin-bottom: 16px;
-  margin-right: 276px;
 }
 
 .header__container {
   position: relative;
   @extend %flex;
+  justify-content: space-between;
 }
 
 .header-navigation {
