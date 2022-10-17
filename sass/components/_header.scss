@@ -1,6 +1,8 @@
 .header {
   //  max-width: 480px;
   //  margin: 0 auto;
+   position: relative;
+   
   border-bottom: 1px solid $border-color;
 }
 
@@ -10,7 +12,7 @@
 }
 
 .header__container {
-  position: relative;
+ 
   @extend %flex;
   justify-content: space-between;
 }
