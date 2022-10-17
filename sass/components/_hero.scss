@@ -1,6 +1,5 @@
 .hero {
-  width: 480px;
-  margin: 0 auto;
+    margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -11,7 +10,7 @@
 
 .hero__container {
   padding: 118px 60px;
-  @extend .container;
+
 }
 
 .hero__title {

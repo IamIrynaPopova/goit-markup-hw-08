@@ -31,7 +31,7 @@ img {
   display: block;
 }
 
-.container, .hero__container {
+.container {
   max-width: 480px;
   margin: 0 auto;
   padding-left: 15px;
@@ -98,7 +98,6 @@ img {
 }
 
 .hero {
-  width: 480px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
