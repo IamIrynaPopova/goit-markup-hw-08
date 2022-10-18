@@ -48,7 +48,7 @@ img {
 }
 
 .header {
-  max-width: 480px;
+  max-width: 1600px;
   margin: 0 auto;
   border-bottom: 1px solid #ececec;
 }
@@ -287,7 +287,6 @@ img {
     padding-left: 40px;
     padding-top: 48px;
     padding-bottom: 48px;
-    padding-right: auto;
     position: fixed;
     width: 100vw;
     height: 100vh;
