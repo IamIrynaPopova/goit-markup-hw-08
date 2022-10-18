@@ -6,7 +6,11 @@
   background-size: cover;
 
   background-color: $background-hero;
-  background-image: linear-gradient($background-image), url(../image/Img.png);
+  background-image: linear-gradient($background-image), url(../image/hero@1x.jpg);
+
+  @include retina {
+   background-image: linear-gradient($background-image), url(../image/hero2x.jpg); 
+  }
 }
 
 .hero__container {

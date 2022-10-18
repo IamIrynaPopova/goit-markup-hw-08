@@ -28,7 +28,7 @@
             >Web<span class="logo__end">Studio</span>
           </a>
         </div>
-             <nav class="header-nav">
+        <nav class="header-nav">
           <ul class="header-navigation">
             <li class="header-navigation__item">
               <a
@@ -64,11 +64,24 @@
             >
           </li>
         </ul>
-          <button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg class="menu-button__svg" width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use class="menu-button__menu" href="./image/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
+        <button
+          type="button"
+          class="menu-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="menu-button__svg"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="menu-button__menu"
+              href="./image/icons.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -207,7 +220,13 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./image/photo1.jpg" alt="photo1" width="270" />
+              <picture>
+                <source
+                  srcset="./image/img2@1xmob.jpg 1x,
+                  ./image/img2@2xmob.jpg 2x"
+                  media="(max-width:767px)"/>
+                <img src="./image/photo1.jpg" alt="photo1" />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__job">Frontend Developer</p>
@@ -560,10 +579,18 @@
         </li>
       </ul>
       <ul class="menu-social">
-        <li class="menu-social__item"><a href="" class="menu-social__link">Instagram</a></li>
-        <li class="menu-social__item"><a href="" class="menu-social__link">Twitter</a></li>
-        <li class="menu-social__item"><a href="" class="menu-social__link">Facebook</a></li>
-        <li class="menu-social__item"><a href="" class="menu-social__link">LinkedIn</a></li>
+        <li class="menu-social__item">
+          <a href="" class="menu-social__link">Instagram</a>
+        </li>
+        <li class="menu-social__item">
+          <a href="" class="menu-social__link">Twitter</a>
+        </li>
+        <li class="menu-social__item">
+          <a href="" class="menu-social__link">Facebook</a>
+        </li>
+        <li class="menu-social__item">
+          <a href="" class="menu-social__link">LinkedIn</a>
+        </li>
       </ul>
     </div>
     <script src="./js/modal.js"></script>
