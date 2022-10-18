@@ -211,8 +211,8 @@ img {
 
 .team {
   margin: 0 auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 
@@ -233,15 +233,19 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
+}
 
 .team__picture {
   display: block;
-  width: 450px;
+  max-width: 450px;
   height: auto;
 }
 
 .team__card {
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 24px;
 }
 
 .team__name {
