@@ -187,7 +187,13 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./image/photo.jpg" alt="photo" width="270" />
+              <picture>
+                <source
+                  srcset="./image/img1@1xmob.jpg 1x, ./image/img1@2xmob.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <img src="./image/photo.jpg" alt="photo" />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__job">Product Designer</p>
@@ -222,9 +228,9 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./image/img2@1xmob.jpg 1x,
-                  ./image/img2@2xmob.jpg 2x"
-                  media="(max-width:767px)"/>
+                  srcset="./image/img2@1xmob.jpg 1x, ./image/img2@2xmob.jpg 2x"
+                  media="(max-width:767px)"
+                />
                 <img src="./image/photo1.jpg" alt="photo1" />
               </picture>
               <div class="team__card">
@@ -259,7 +265,13 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./image/photo2.jpg" alt="photo2" width="270" />
+              <picture>
+                <source
+                  srcset="./image/img3@1xmob.jpg 1x, ./image/img3@2xmob.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <img src="./image/photo2.jpg" alt="photo2" />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__job">Marketing</p>
@@ -292,7 +304,13 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./image/photo3.jpg" alt="photo3" width="270" />
+              <picture>
+                <source
+                  srcset="./image/img4@1xmob.jpg 1x, ./image/img4@2xmob.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <img src="./image/photo3.jpg" alt="photo3" />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__job">UI Designer</p>
