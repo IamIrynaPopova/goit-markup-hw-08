@@ -289,8 +289,8 @@ img {
     padding-bottom: 48px;
     padding-right: auto;
     position: fixed;
-    width: 480px;
-    height: 796px;
+    width: 100vw;
+    height: 100vh;
     top: 0;
     right: 0;
     background-color: #ffffff;
