@@ -238,8 +238,8 @@ img {
 
 .team__picture {
   display: block;
-  width: 450px;
-  height: 460px;
+  max-width: 450px;
+  height: auto;
 }
 
 .team__card {
