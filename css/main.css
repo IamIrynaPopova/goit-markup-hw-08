@@ -59,7 +59,6 @@ img {
 }
 
 .header__container {
-  position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
