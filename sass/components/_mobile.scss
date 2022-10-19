@@ -1,29 +1,25 @@
 .menu-container {
-  @media screen and (max-width: 480px) {
-    padding: 48px 40px;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    right: 0;
-    background-color: $main-color;
+  padding: 48px 40px;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background-color: $main-color;
 
-    transform: translateX(100%);
-    transition: transform $transition-timing;
-  }
+  transform: translateX(100%);
+  transition: transform $transition-timing;
 }
 
 .menu-button__mobile {
-  @media screen and (max-width: 480px) {
-    position: absolute;
-    display: inline-flex;
-    border: none;
-    padding: 0;
-    top: 10px;
-    right: 15px;
+  position: absolute;
+  display: inline-flex;
+  border: none;
+  padding: 0;
+  top: 10px;
+  right: 15px;
 
-    background-color: transparent;
-  }
+  background-color: transparent;
 }
 
 .menu-button__svg-close {
