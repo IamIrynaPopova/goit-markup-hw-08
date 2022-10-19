@@ -1,8 +1,7 @@
 .header {
-   max-width: 1600px;
-   margin: 0 auto;
-  
-   
+  max-width: 1600px;
+  margin: 0 auto;
+
   border-bottom: 1px solid $border-color;
 }
 
@@ -12,22 +11,21 @@
 }
 
 .header__container {
-  position: relative;
   @extend %flex;
   justify-content: space-between;
 }
 
 .header-nav {
   display: none;
- }
+}
 
 .header-contacts {
   display: none;
 
-//  @include tablet{
-//   display: block;
-//   background-color: aquamarine;
-//  }
+  //  @include tablet{
+  //   display: block;
+  //   background-color: aquamarine;
+  //  }
 }
 
 // Menu button
@@ -53,8 +51,6 @@
 // .menu-button.is-open .menu-button__menu {
 //   display: none;
 // }
-
-
 
 // .header {
 //   max-width: 1600px;
