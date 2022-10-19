@@ -539,8 +539,9 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  padding: 48px 40px;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 0 48px 40px;
   background-color: #ffffff;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -588,7 +589,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 306px;
+  margin-bottom: 100px;
 }
 
 .menu-container__item:not(:last-child) {
@@ -643,6 +644,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 64px;
 }
 
