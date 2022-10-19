@@ -31,13 +31,13 @@
 .team__picture {
   display: block;
 
-  max-width: 100vw;
-  height: auto;
-  }
+  width: 450px;
+  height: 460px;
+}
 
 .team__card {
- padding-top: 30px;
- padding-bottom: 24px;
+  padding-top: 30px;
+  padding-bottom: 24px;
 }
 
 .team__name {
@@ -46,7 +46,7 @@
   color: $secondary-color;
 
   @include font(500, 16px, 1.19);
-   text-align: center;
+  text-align: center;
 }
 .team__job {
   margin-bottom: 16px;
@@ -55,7 +55,6 @@
 
   @include font(400, 16px, 1.19);
   text-align: center;
-  
 }
 
 .networks {
