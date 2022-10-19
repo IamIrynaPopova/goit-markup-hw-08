@@ -236,12 +236,6 @@ img {
   margin-bottom: 30px;
 }
 
-.team__picture {
-  display: block;
-  max-width: 450px;
-  height: auto;
-}
-
 .team__card {
   padding-top: 30px;
   padding-bottom: 24px;
