@@ -1,8 +1,6 @@
 .menu-container {
   @media screen and (max-width: 480px) {
-    padding-left: 40px;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding: 48px 40px;
     position: fixed;
     width: 100vw;
     height: 100vh;
