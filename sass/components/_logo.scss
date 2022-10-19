@@ -1,23 +1,17 @@
-
 .logo {
-  width: 134px;
+  padding: 16px 0;
   display: block;
 
-  
-  color: $accent-color; 
+  color: $accent-color;
 
   text-decoration: none;
   font-family: Raleway, sans-serif;
-  @include font (700,24px,1.17);
-  }
+  @include font(700, 24px, 1.17);
+}
 
 .logo__end {
-  color: $icon-secondary-color;}
-
-
-
-
-
+  color: $icon-secondary-color;
+}
 
 // .logo {
 //   width: 145px;
