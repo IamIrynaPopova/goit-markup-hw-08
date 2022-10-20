@@ -423,6 +423,27 @@ img {
   height: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+  .team__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+  .team__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
