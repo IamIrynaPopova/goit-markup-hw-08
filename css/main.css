@@ -575,7 +575,6 @@ img {
   padding: 40px;
   position: absolute;
   width: 450px;
-  height: 609px;
   top: 50%;
   left: 50%;
   border-radius: 4px;
@@ -730,17 +729,17 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 30px;
 }
 
 .checkbox__input {
-  width: 16px;
+  min-width: 16px;
   height: 15px;
+  margin-right: 8px;
   border-radius: 2px;
-  background-size: contain;
   border: 1px solid #212121;
 }
 
@@ -751,6 +750,7 @@ img {
 }
 
 .checkbox__link {
+  display: inline;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
