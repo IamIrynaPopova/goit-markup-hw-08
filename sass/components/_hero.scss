@@ -29,7 +29,20 @@
   text-align: center;
 }
 
+@include tablet {
+ .hero {
+   background-image: linear-gradient($background-image), url(../image/herotablet@1x.jpg);
 
+  @include retina {
+   background-image: linear-gradient($background-image), url(../image/herotablet@2x.jpg); 
+  }
+ } 
+
+.hero__container {
+padding: 118px 204px;
+}
+
+}
 
 
 

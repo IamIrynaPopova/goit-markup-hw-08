@@ -101,6 +101,7 @@
   .header-contacts__envelope {
     width: 14px;
     height: 10px;
+    margin-right: 8px;
 
     fill: currentColor;
   }
@@ -108,10 +109,14 @@
   .header-contacts__smartphone {
     width: 10px;
     height: 14px;
+    margin-right: 8px;
 
     fill: currentColor;
   }
 }
+
+
+
 
 // .header {
 //   max-width: 1600px;

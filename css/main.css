@@ -170,11 +170,13 @@ img {
   .header-contacts__envelope {
     width: 14px;
     height: 10px;
+    margin-right: 8px;
     fill: currentColor;
   }
   .header-contacts__smartphone {
     width: 10px;
     height: 14px;
+    margin-right: 8px;
     fill: currentColor;
   }
 }
@@ -225,6 +227,23 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/herotablet@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/herotablet@1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/herotablet@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/herotablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__container {
+    padding: 118px 204px;
+  }
+}
 .button {
   display: block;
   padding: 10px 24px;
@@ -283,7 +302,7 @@ img {
   line-height: 1.78;
 }
 
-.features__item {
+.features__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,6 +314,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+
 .features__item:not(:last-child) {
   margin-bottom: 30px;
 }
