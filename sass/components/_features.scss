@@ -1,5 +1,3 @@
-/* Section Features*/
-
 .features {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -46,11 +44,27 @@
   }
 }
 
+// ---------------Tablet------------
+
 @include tablet {
-
-  
-
+  .features__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .features__item {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+    &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  }
 }
+
+
+
+
+
 
 // /* Section Features*/
 

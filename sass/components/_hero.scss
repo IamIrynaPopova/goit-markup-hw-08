@@ -29,6 +29,8 @@
   text-align: center;
 }
 
+// ---------------Tablet------------
+
 @include tablet {
  .hero {
    background-image: linear-gradient($background-image), url(../image/herotablet@1x.jpg);

@@ -266,7 +266,6 @@ img {
   background-color: #188ce8;
 }
 
-/* Section Features*/
 .features {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -319,6 +318,24 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .features__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+  .features__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+  .features__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
 .work {
   display: none;
 }
