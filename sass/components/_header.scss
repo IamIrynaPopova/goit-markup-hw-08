@@ -18,8 +18,6 @@
   display: none;
 }
 
-// Menu button
-
 .menu-button {
   display: inline-flex;
   border: none;
@@ -29,24 +27,91 @@
   background-color: transparent;
 }
 
+@include tablet {
+  .menu-button {
+    display: none;
+  }
 
+  .header-nav {
+    display: block;
+  }
 
+  .header-navigation {
+    display: flex;
+    align-items: center;
+  }
 
+  .header-navigation__link {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
+    color: $secondary-color;
 
+    text-decoration: none;
+    @include font(500, 14px, 1.17);
+    letter-spacing: 0.02em;
 
+    transition: color $transition-timing;
 
-// .menu-button .menu-button__close {
-//   display: none;
-// }
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
 
-// .menu-button.is-open .menu-button__close {
-//   display: block;
-// }
+  .header-navigation__link--current {
+    position: relative;
 
-// .menu-button.is-open .menu-button__menu {
-//   display: none;
-// }
+    color: $accent-color;
+  }
+
+  .header-navigation__link--current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    margin-top: 28px;
+    border-radius: 2px;
+
+    background-color: $accent-color;
+  }
+
+  .header-navigation__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .header-contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-contacts__link {
+    text-decoration: none;
+    color: $main-color-text;
+
+    @include font(500, 12px, 1.17);
+    letter-spacing: 0.02em;
+
+    transition: color $transition-timing;
+  }
+
+  .header-contacts__envelope {
+    width: 14px;
+    height: 10px;
+
+    fill: currentColor;
+  }
+
+  .header-contacts__smartphone {
+    width: 10px;
+    height: 14px;
+
+    fill: currentColor;
+  }
+}
 
 // .header {
 //   max-width: 1600px;
@@ -144,4 +209,17 @@
 //   @extend .header-contacts__envelope;
 //   width: 10px;
 //   height: 16px;
+// }
+
+// ---------------------------
+// .menu-button .menu-button__close {
+//   display: none;
+// }
+
+// .menu-button.is-open .menu-button__close {
+//   display: block;
+// }
+
+// .menu-button.is-open .menu-button__menu {
+//   display: none;
 // }
