@@ -6,15 +6,13 @@
 
 @include mobile {
   .container {
-   width: 480px;
-   background-color: brown;
+    width: 480px;
   }
 }
 
 @include tablet {
   .container {
     width: 768px;
-    background-color: aqua;
   }
 }
 
@@ -24,10 +22,6 @@
     background-color: greenyellow;
   }
 }
-
-
-
-
 
 // .container {
 //   width: 1200px;

@@ -160,15 +160,32 @@
   margin-left: 10px;
 }
 
+// -----------Tablet--------
 
+@include tablet {
+  .footer__container--tab {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
+  .footer__address {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
 
-
-
-
-
-
-
-
+  .logo.logo--flex {
+    padding: 0;
+  }
+  .footer-networks {
+    width: 50%;
+    margin: 0;
+  }
+  .form-footer {
+   max-width: 450px;
+   padding: 0;
+  }
+}
 
 // /* Footer */
 

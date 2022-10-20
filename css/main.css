@@ -52,13 +52,11 @@ img {
 @media screen and (min-width: 480px) {
   .container, .form-footer, .footer__address {
     width: 480px;
-    background-color: brown;
   }
 }
 @media screen and (min-width: 768px) {
   .container, .form-footer, .footer__address {
     width: 768px;
-    background-color: aqua;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -697,6 +695,33 @@ img {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__container--tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-bottom: 60px;
+  }
+  .footer__address {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+  .logo.logo--flex {
+    padding: 0;
+  }
+  .footer-networks {
+    width: 50%;
+    margin: 0;
+  }
+  .form-footer {
+    max-width: 450px;
+    padding: 0;
+  }
+}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
