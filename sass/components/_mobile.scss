@@ -1,116 +1,130 @@
-.menu-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 48px 0 48px 40px;
 
-  background-color: $main-color;
+// -----Mobile--------
 
-  transform: translateX(100%);
-  transition: transform $transition-timing;
-}
+@media screen and (max-width: 767px) {
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 0 48px 40px;
 
-.menu-button__mobile {
-  position: absolute;
-  display: inline-flex;
-  border: none;
-  padding: 0;
-  top: 10px;
-  right: 15px;
+    background-color: $main-color;
 
-  background-color: transparent;
-}
-
-.menu-button__svg-close {
-  fill: $icon-secondary-color;
-
-  transition: fill $transition-timing;
-
-  &:hover,
-  &:focus {
-    fill: $accent-color;
+    transform: translateX(100%);
+    transition: transform $transition-timing;
   }
-}
 
-.menu-container.is-open {
-  transform: translateX(0);
-  transition: transform $transition-timing;
-}
+  .menu-button__mobile {
+    position: absolute;
+    display: inline-flex;
+    border: none;
+    padding: 0;
+    top: 10px;
+    right: 15px;
 
-.menu-container__nav {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 100px;
-}
+    background-color: transparent;
+  }
 
-.menu-container__item:not(:last-child) {
-  margin-bottom: 32px;
-}
+  .menu-button__svg-close {
+    fill: $icon-secondary-color;
 
-.menu-container__link {
-  color: $secondary-color;
+    transition: fill $transition-timing;
 
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.18;
-  letter-spacing: 0.02em;
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+  }
 
-  transition: color $transition-timing;
+  .menu-container.is-open {
+    transform: translateX(0);
+    transition: transform $transition-timing;
+  }
 
-  &:hover,
-  &:focus {
+  .menu-container__nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .menu-container__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .menu-container__link {
+    color: $secondary-color;
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    transition: color $transition-timing;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  .menu-container__link--current {
     color: $accent-color;
   }
-}
 
-.menu-container__link--current {
-  color: $accent-color;
-}
-
-.menu-container__contact:not(:last-child) {
-  margin-bottom: 32px;
-}
-
-.menu-container__tel {
-  @include font(500, 34px, 1.18);
-  letter-spacing: 0.02em;
-  text-decoration: none;
-
-  color: $accent-color;
-
-  transition: color $transition-timing;
-}
-
-.menu-container__mail {
-  @include font(500, 24px, 1.16);
-  letter-spacing: 0.02em;
-  text-decoration: none;
-
-  color: $main-color-text;
-
-  transition: color $transition-timing;
-}
-
-.menu-social {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 64px;
+  .menu-container__contact:not(:last-child) {
+    margin-bottom: 32px;
   }
 
-.menu-social__item:not(:last-child) {
-  padding-right: 10px;
-  margin-right: 10px;
+  .menu-container__tel {
+    @include font(500, 34px, 1.18);
+    letter-spacing: 0.02em;
+    text-decoration: none;
 
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+    color: $accent-color;
+
+    transition: color $transition-timing;
+  }
+
+  .menu-container__mail {
+    @include font(500, 24px, 1.16);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: $main-color-text;
+
+    transition: color $transition-timing;
+  }
+
+  .menu-social {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 64px;
+  }
+
+  .menu-social__item:not(:last-child) {
+    padding-right: 10px;
+    margin-right: 10px;
+
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  .menu-social__link {
+    color: $accent-color;
+
+    text-decoration: none;
+    @include font(500, 18px, 1.22);
+    letter-spacing: 0.02em;
+  }
+  
 }
 
-.menu-social__link {
-  color: $accent-color;
+// ------Tablet-------
 
-  text-decoration: none;
-  @include font(500, 18px, 1.22);
-  letter-spacing: 0.02em;
+@include tablet {
+   .menu-container {
+    display: none;
+   }
 }
