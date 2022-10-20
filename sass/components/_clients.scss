@@ -54,9 +54,13 @@
   transition: fill $transition-timing;
 }
 
+// ----------Tablet------
 
-
-
+@include tablet {
+  .clients__item {
+  width: calc((100% - 3*30px) / 3);
+  }
+}
 
 
 
