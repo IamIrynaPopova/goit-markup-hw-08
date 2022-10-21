@@ -649,6 +649,13 @@ img {
     font-size: 36px;
     line-height: 1.18;
   }
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .team__card {
+    padding: 30px 0;
+  }
 }
 .clients {
   padding-top: 60px;
@@ -711,6 +718,43 @@ img {
 @media screen and (min-width: 768px) {
   .clients__item {
     width: calc((100% - 90px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .clients__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+  .clients__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
+  }
+  .clients__item {
+    margin: 0;
+  }
+  .clients__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .clients__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 170px;
+    height: 92px;
   }
 }
 .footer {
