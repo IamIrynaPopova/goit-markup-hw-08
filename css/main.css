@@ -438,10 +438,89 @@ img {
     margin-bottom: 15px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .features__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .features__item {
+    width: calc((100% - 90px) / 4);
+    margin: 0;
+  }
+  .features__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  .features__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 .work {
   display: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+    padding-bottom: 94px;
+  }
+  .work__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .work__item {
+    width: calc((100% - 60px) / 3);
+  }
+  .work__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .work__title {
+    width: 366px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #212121;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+  .work__label {
+    position: relative;
+  }
+  .work__overlay {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
 .team {
   margin: 0 auto;
   padding-top: 60px;
@@ -544,6 +623,31 @@ img {
   }
   .team__item:not(:last-child) {
     margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 0;
+  }
+  .team__item {
+    width: calc((100% - 90px) / 4);
+    margin: 0;
+  }
+  .team__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  .team__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.18;
   }
 }
 .clients {

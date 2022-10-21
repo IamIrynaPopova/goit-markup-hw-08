@@ -1,6 +1,5 @@
 // ---------Mobile-------------
 
-
 .team {
   margin: 0 auto;
   padding-top: 60px;
@@ -105,8 +104,31 @@
   }
 }
 
+// -------------Desktop-------
 
+@include desktop {
+  .team__list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+  }
 
+  .team__item {
+    width: calc((100% - 90px) / 4);
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
+
+  .team__title {
+    margin-bottom: 50px;
+
+    @include font(700, 36px, 1.18);
+  }
+}
 
 // .team {
 //   max-width: 1600px;
