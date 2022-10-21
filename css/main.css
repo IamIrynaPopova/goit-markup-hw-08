@@ -1291,6 +1291,14 @@ input:checked + .checkbox__input {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    padding: 40px;
+    position: absolute;
+    width: 528px;
+    height: 581px;
+  }
+}
 @media screen and (max-width: 767px) {
   .menu-container {
     position: fixed;
