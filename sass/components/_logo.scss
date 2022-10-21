@@ -11,13 +11,27 @@
 
 .logo__end {
   color: $icon-secondary-color;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
+// ----Tablet-----------
 
+@include tablet {
+  .logo {
+    padding: 26px 0;
+  }
+}
 
+// ----------Desktop---------
 
-
-
+@include desktop {
+  .logo {
+    @include font(700, 26px, 1.19);
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
 
 // .logo {
 //   width: 145px;
