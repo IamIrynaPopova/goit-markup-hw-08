@@ -129,13 +129,18 @@
   }
   .header-navigation__link {
     @include font(500, 14px, 1.14);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 
   .header-contacts {
     display: flex;
     flex-direction: row;
     align-items: center;
-     padding-left: 315px;
+    padding-left: 315px;
   }
 
   .header-contacts__item:not(:last-child) {

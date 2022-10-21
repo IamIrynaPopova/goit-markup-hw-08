@@ -191,6 +191,9 @@ img {
     font-size: 14px;
     line-height: 1.14;
   }
+  .header-navigation__link:hover, .header-navigation__link:focus {
+    color: #2196f3;
+  }
   .header-contacts {
     display: -webkit-box;
     display: -ms-flexbox;
