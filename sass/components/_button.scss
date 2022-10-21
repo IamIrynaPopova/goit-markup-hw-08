@@ -1,16 +1,16 @@
 .button {
   display: block;
-  padding: 10px 24px;
+   padding: 10px 24px;
   border-radius: 4px;
   margin: auto;
- 
+
   border-color: $accent-color;
   background: $accent-color;
   color: $main-color;
   cursor: pointer;
 
   font-family: inherit;
-  @include font (700,16px,1.88);
+  @include font(700, 16px, 1.88);
   letter-spacing: 0.06em;
   text-align: center;
 
@@ -22,34 +22,11 @@
   }
 }
 
+// ---------------Desktop------------
 
+@include desktop {
+  .button {
+    padding: 10px 32px;
+  }
+}
 
-
-
-
-
-
-// .button {
-//   display: block;
-//   padding: 10px 32px;
-//   border-radius: 4px;
-//   margin-right: auto;
-//   margin-left: auto;
-
-//   border-color: $accent-color;
-//   background: $accent-color;
-//   color: $main-color;
-//   cursor: pointer;
-
-//   font-family: inherit;
-//   @include font (700,16px,1.88);
-//   letter-spacing: 0.06em;
-//   text-align: center;
-
-//   transition: background-color $transition-timing;
-
-//   &:hover,
-//   &:focus {
-//     background-color: $icon-background-active;
-//   }
-// }

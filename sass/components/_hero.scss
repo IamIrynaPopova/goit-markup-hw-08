@@ -7,16 +7,17 @@
   background-size: cover;
 
   background-color: $background-hero;
-  background-image: linear-gradient($background-image), url(../image/hero@1x.jpg);
+  background-image: linear-gradient($background-image),
+    url(../image/hero@1x.jpg);
 
   @include retina {
-   background-image: linear-gradient($background-image), url(../image/hero2x.jpg); 
+    background-image: linear-gradient($background-image),
+      url(../image/hero2x.jpg);
   }
 }
 
 .hero__container {
   padding: 118px 60px;
-
 }
 
 .hero__title {
@@ -33,54 +34,42 @@
 // ---------------Tablet------------
 
 @include tablet {
- .hero {
-   background-image: linear-gradient($background-image), url(../image/herotablet@1x.jpg);
+  .hero {
+    background-image: linear-gradient($background-image),
+      url(../image/herotablet@1x.jpg);
 
-  @include retina {
-   background-image: linear-gradient($background-image), url(../image/herotablet@2x.jpg); 
+    @include retina {
+      background-image: linear-gradient($background-image),
+        url(../image/herotablet@2x.jpg);
+    }
   }
- } 
 
-.hero__container {
-padding: 118px 204px;
+  .hero__container {
+    padding: 118px 204px;
+  }
 }
 
+// -------------Desktop-------
+
+@include desktop {
+  .hero {
+    background-image: linear-gradient($background-image),
+      url(../image/herodesktop@1x.jpg);
+
+    @include retina {
+      background-image: linear-gradient($background-image),
+        url(../image/herodesktop@2x.jpg);
+    }
+  }
+  .hero__container {
+    padding: 200px 0;
+  }
+
+  .hero__title {
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include font(900, 44px, 1.36);
+  }
 }
-
-
-
-
-
-
-
-
-
-// .hero {
-//   max-width: 1600px;
-//   margin: 0 auto;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-
-//   background-color: $background-hero;
-//   background-image: linear-gradient($background-image), url(../image/Img.png);
-// }
-
-// .hero__container {
-//   padding: 200px 0;
-//   @extend .container;
-// }
-
-// .hero__title {
-//   width: 700px;
-//   margin-bottom: 30px;
-//   margin-right: auto;
-//   margin-left: auto;
-
-//   color: $main-color;
-
-//   @include font(900, 44px, 1.36);
-//   letter-spacing: 0.06em;
-//   text-transform: uppercase;
-//   text-align: center;
-// }
