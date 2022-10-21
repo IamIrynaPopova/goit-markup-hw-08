@@ -990,6 +990,8 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .address__item {
     display: block;
@@ -1004,7 +1006,7 @@ img {
   }
   .address__list {
     display: block;
-    text-align: center;
+    text-align: start;
   }
   .form-footer {
     display: block;
@@ -1035,9 +1037,15 @@ img {
   }
   .button-footer, .checkbox-button {
     width: 200px;
+    padding: 10px 28px;
   }
   .footer-networks {
     margin-left: 70px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer__address {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
