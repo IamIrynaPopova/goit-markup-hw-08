@@ -97,24 +97,18 @@
 // ---------------Tablet------------
 
 @include tablet {
-  .projects-set__link {
-    height: 100%;
-  }
-
   .projects-set {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    gap: 30px;
+    margin-bottom: 60px;
+   
   }
 
   .projects-set__item {
     flex-basis: calc((100% - 30px) / 2);
   }
-.projects-set__title {
-  margin-bottom: 0;
-}
-
+  .projects-set__title {
+    margin-bottom: 0;
+  }
 }
 // .projects-set__title {
 //   margin-bottom: 4px;

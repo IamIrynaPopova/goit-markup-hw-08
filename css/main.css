@@ -1218,20 +1218,12 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .projects-set__link {
-    height: 100%;
-  }
   .projects-set {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 30px;
+    margin-bottom: 60px;
   }
   .projects-set__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
