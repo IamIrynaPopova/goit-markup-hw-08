@@ -100,7 +100,6 @@
   .projects-set {
     flex-direction: row;
     margin-bottom: 60px;
-   
   }
 
   .projects-set__item {
@@ -110,6 +109,26 @@
     margin-bottom: 0;
   }
 }
+
+// -------------Desktop-------
+
+@include desktop {
+  .projects-set__title {
+    margin-bottom: 4px;
+  }
+.projects-set__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+
+  .projects-set {
+    margin-bottom: 94px;
+  }
+
+}
+
+
+
+
 // .projects-set__title {
 //   margin-bottom: 4px;
 

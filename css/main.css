@@ -1233,6 +1233,18 @@ img {
     margin-bottom: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .projects-set__title {
+    margin-bottom: 4px;
+  }
+  .projects-set__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+  .projects-set {
+    margin-bottom: 94px;
+  }
+}
 @media screen and (max-width: 480px) {
   .modal {
     max-width: 320px;
