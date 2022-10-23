@@ -395,6 +395,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .features__text {
@@ -436,6 +437,9 @@ img {
   }
   .features__item:not(:last-child) {
     margin-bottom: 15px;
+  }
+  .features__title {
+    text-align: start;
   }
 }
 @media screen and (min-width: 1200px) {

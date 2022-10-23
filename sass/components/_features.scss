@@ -29,6 +29,7 @@
   font-size: $main-font-size;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .features__text {
@@ -61,6 +62,9 @@
       margin-bottom: 15px;
     }
   }
+  .features__title {
+    text-align: start;
+  }
 }
 
 // ---------------Desktop------------
@@ -87,6 +91,6 @@
   }
 
   .features__text {
-  @include font(400, 14px, 1.71);
-}
+    @include font(400, 14px, 1.71);
+  }
 }
